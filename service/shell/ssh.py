@@ -5,7 +5,7 @@ import sys
 import getpass
 import threading
 import os
-host = "153.35.93.117"
+host = "192.168.213.27"
 port = 22
 user = "root"
 password = "6yhn^YHN"

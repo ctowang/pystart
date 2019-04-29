@@ -1,8 +1,8 @@
 # coding=utf-8
 import happybase
  
-#connection = happybase.Connection('153.35.93.31',autoconnect=False,table_prefix='myhbs')
-connection = happybase.Connection('153.35.93.31',autoconnect=False)
+#connection = happybase.Connection('ip',autoconnect=False,table_prefix='myhbs')
+connection = happybase.Connection('ip',autoconnect=False)
 connection.open()
 print (connection.tables())
 

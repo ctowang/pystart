@@ -3,7 +3,7 @@ from elasticsearch import Elasticsearch
 import json
 #es连接
 es = Elasticsearch(
-    ['153.37.97.173:27022', '153.37.97.173:27023'],
+    ['192.168.213.23:27022', '192.168.213.23:27023'],
     sniff_on_start=True,
     sniff_on_connection_fail=True,
     sniffer_timeout=60

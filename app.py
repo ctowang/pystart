@@ -4,12 +4,15 @@ from flask import Flask,request,render_template
 from ws.qxsp import qx
 from ws.test.test import test
 from ws.shell.ip import ip
+from ws.es.es import es
 app=Flask(__name__)
 
 #注册蓝图
 app.register_blueprint(qx,url_prefix='/')
 app.register_blueprint(test,url_prefix='/py')
 app.register_blueprint(ip,url_prefix='/linux')
+app.register_blueprint(es,url_prefix='/py')
+
 
 #启动服务
 if __name__ == '__main__':

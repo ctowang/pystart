@@ -5,16 +5,15 @@ dirPath = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir,os.p
 sys.path.append(dirPath)
 from configparser import ConfigParser
 
-#≥ı ºªØconfig¿‡
 cp = ConfigParser()
 cp.read("../../config/db.cfg")
-section = cp.sections()[0]
+section = cp.items('mysql')
 
-sid = cp.get(section, "db")
-ip = cp.get(section, "host")
-name = cp.get(section, "user")
-pwd = cp.get(section, "passwd")
-pt = cp.getint(section, "port")
+sid = cp.get('mysql', 'db')
+ip = cp.get('mysql', 'host')
+name = cp.get('mysql', 'user')
+pwd = cp.get('mysql', 'passwd')
+pt = cp.getint('mysql', 'port')
 
 
 

@@ -37,10 +37,6 @@ def cs():
     ]
     return render_template('index.html', title='Home', user=user, posts=posts)
 
-@test.route('/dy')
-def dy():
-    print(wy().ttt())
-    return wy().ttt()
 
 if __name__ == "__main__":
     dy()
